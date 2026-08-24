@@ -49,6 +49,6 @@ Hi there! Devika, also known as Working Professional as Data Engineer. I’m an 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 Linkdin:https://www.linkedin.com/in/nunna-devika-rani-781768217/
 
-Security
+
 Status
 Comm
