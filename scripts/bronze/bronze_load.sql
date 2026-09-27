@@ -22,3 +22,16 @@ GO
 
 -- Source data loading will be added here.
 -- CSV files will be loaded into the Bronze tables.
+-- =============================================================
+-- Load CRM Customer Information
+-- =============================================================
+
+BULK INSERT bronze.crm_customer_info
+FROM 'C:\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
+WITH
+(
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    TABLOCK
+);
+GO
