@@ -1,60 +1,72 @@
-# SQL Data Warehouse Project — Documentation
+# SQL Data Warehouse Project
 
-This project demonstrates the design and implementation of a SQL-based data warehouse using a layered data architecture.
+## Overview
 
-## Project Overview
+This project demonstrates the design and implementation of a modern SQL Data Warehouse using a layered architecture and Star Schema data model.
 
-The project covers the complete data warehouse workflow:
+The project integrates data from CRM and ERP source systems, transforms and cleans the data through multiple warehouse layers, and prepares business-ready datasets for analytics and reporting.
 
-* Data extraction from source systems
-* Data loading into staging tables
-* Data cleansing and transformation
-* Data integration
-* Dimensional modeling
-* Loading data into the analytical layer
-* SQL-based data validation and analysis
+The implementation focuses on SQL-based ETL, data integration, data quality, dimensional modeling, and analytical reporting.
 
-## Architecture
+---
+
+## Project Objectives
+
+The main objectives of this project are to:
+
+- Build a complete SQL Data Warehouse from raw source data.
+- Integrate CRM and ERP datasets.
+- Implement Bronze, Silver, and Gold data layers.
+- Perform data cleansing and standardization using SQL.
+- Handle duplicate and invalid records.
+- Implement dimensional modeling using a Star Schema.
+- Create customer and product dimensions.
+- Create a sales fact table.
+- Build analytical SQL views.
+- Perform data quality testing.
+- Create reusable SQL analytics queries.
+
+---
+
+# Data Warehouse Architecture
 
 The project follows a three-layer architecture:
 
-### 1. Bronze Layer
 
-Raw data is loaded from source systems with minimal transformation.
-
-### 2. Silver Layer
-
-Data is cleaned, standardized, validated, and transformed.
-
-### 3. Gold Layer
-
-Business-ready data is organized into analytical tables using dimensional modeling.
-
-## Technologies
-
-* SQL
-* SQL Server
-* ETL / ELT
-* Data Warehousing
-* Dimensional Modeling
-* Stored Procedures
-* Data Validation
-
-## Project Goals
-
-The main objectives are to:
-
-1. Build a structured data warehouse.
-2. Implement ETL pipelines using SQL.
-3. Transform raw data into clean analytical datasets.
-4. Apply data quality and validation checks.
-5. Create business-ready datasets for reporting and analytics.
-
-## Repository Structure
-sql-data-warehouse-project/
-│
-├── datasets/
-├── docs/
-├── scripts/
-├── tests/
-└── README.md
+                    SOURCE SYSTEMS
+                ┌─────────────────────┐
+                │     CRM Sources     │
+                │     ERP Sources     │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    BRONZE LAYER     │
+                │                     │
+                │     Raw Data        │
+                │  Minimal Transform  │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    SILVER LAYER     │
+                │                     │
+                │ Clean + Standardize │
+                │ Validate + Transform│
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │     GOLD LAYER      │
+                │                     │
+                │   Star Schema       │
+                │ Dimensions + Fact   │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │      ANALYTICS      │
+                │                     │
+                │ Customer / Product  │
+                │ Sales Analysis      │
+                └─────────────────────┘
