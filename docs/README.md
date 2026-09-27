@@ -1,3 +1,32 @@
+<p align="center">
+
+# SQL Data Warehouse Project
+
+### End-to-End SQL Data Warehouse | ETL | Data Integration | Dimensional Modeling
+
+</p>
+
+---
+
+## Project Highlights
+
+| Area | Implementation |
+|---|---|
+| Architecture | Bronze → Silver → Gold |
+| Source Systems | CRM + ERP |
+| ETL | SQL / T-SQL |
+| Data Modeling | Star Schema |
+| Dimensions | Customers, Products |
+| Fact | Sales |
+| Data Quality | SQL Validation Tests |
+| Analytics | Customer, Product & Sales Analysis |
+| Database | SQL Server |
+| Version Control | Git & GitHub |
+
+---
+
+## Overview
+
 # SQL Data Warehouse Project
 
 ## Overview
