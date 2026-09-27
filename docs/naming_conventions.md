@@ -4,7 +4,7 @@
 
 Consistent naming conventions make the data warehouse easier to understand, maintain, and scale.
 
-This project follows standardized naming practices across databases, schemas, tables, columns, scripts, and analytical objects.
+This project follows standardized naming practices across databases, schemas, tables, columns, SQL scripts, and analytical objects.
 
 ---
 
