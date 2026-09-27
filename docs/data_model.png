@@ -1,0 +1,44 @@
+                    ┌──────────────────────┐
+                    │   dim_customers      │
+                    │──────────────────────│
+                    │ customer_key (PK)    │
+                    │ customer_id          │
+                    │ customer_number      │
+                    │ first_name           │
+                    │ last_name            │
+                    │ gender               │
+                    │ country              │
+                    └──────────┬───────────┘
+                               │
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     fact_sales       │
+                    │──────────────────────│
+                    │ sales_key (PK)       │
+                    │ order_number         │
+                    │ customer_key (FK)   │
+                    │ product_key (FK)    │
+                    │ order_date          │
+                    │ shipping_date       │
+                    │ due_date            │
+                    │ sales_amount        │
+                    │ quantity             │
+                    │ price                │
+                    └──────────┬───────────┘
+                               │
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    dim_products      │
+                    │──────────────────────│
+                    │ product_key (PK)    │
+                    │ product_id          │
+                    │ product_number      │
+                    │ product_name        │
+                    │ product_cost        │
+                    │ product_line        │
+                    │ category            │
+                    │ subcategory         │
+                    │ maintenance         │
+                    └──────────────────────┘
