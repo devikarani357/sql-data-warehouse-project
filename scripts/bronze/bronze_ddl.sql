@@ -52,3 +52,31 @@ CREATE TABLE bronze.crm_sales_details
     price             DECIMAL(18,2)
 );
 GO
+
+-- ERP Customer Information
+CREATE TABLE bronze.erp_customer_info
+(
+    customer_id       VARCHAR(50),
+    birth_date        DATE,
+    gender            VARCHAR(20)
+);
+GO
+
+-- ERP Location Information
+CREATE TABLE bronze.erp_location_info
+(
+    customer_id       VARCHAR(50),
+    country           VARCHAR(100)
+);
+GO
+
+-- ERP Product Category Information
+CREATE TABLE bronze.erp_product_category
+(
+    product_id        VARCHAR(50),
+    category_id       VARCHAR(50),
+    category_name     VARCHAR(100),
+    subcategory_name  VARCHAR(100),
+    maintenance       VARCHAR(100)
+);
+GO
