@@ -58,4 +58,3 @@ sql-data-warehouse-project/
 ├── scripts/
 ├── tests/
 └── README.md
-```
