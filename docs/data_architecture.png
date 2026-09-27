@@ -1,0 +1,30 @@
+             SOURCE SYSTEMS
+          ┌──────────────────┐
+          │   CRM CSV Files  │
+          │   ERP CSV Files  │
+          └────────┬─────────┘
+                   │
+                   ▼
+          ┌──────────────────┐
+          │  BRONZE LAYER    │
+          │    Raw Data      │
+          └────────┬─────────┘
+                   │
+                   ▼
+          ┌──────────────────┐
+          │  SILVER LAYER    │
+          │ Clean + Transform│
+          └────────┬─────────┘
+                   │
+                   ▼
+          ┌──────────────────┐
+          │   GOLD LAYER     │
+          │  Star Schema     │
+          └────────┬─────────┘
+                   │
+                   ▼
+          ┌──────────────────┐
+          │    ANALYTICS     │
+          │ Customer/Product │
+          │      /Sales      │
+          └──────────────────┘
