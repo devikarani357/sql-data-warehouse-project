@@ -2,14 +2,8 @@
 
 ## Overview
 
-This data catalog documents the tables used throughout the SQL Data Warehouse project.
+This document describes the datasets, tables, columns, transformations, and business purpose of the SQL Data Warehouse project.
 
-The project follows a three-layer architecture:
+The warehouse follows a three-layer architecture:
 
-Source Data
-    ↓
-Bronze Layer
-    ↓
-Silver Layer
-    ↓
-Gold Layer
+Bronze → Silver → Gold
