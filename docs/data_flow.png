@@ -1,0 +1,19 @@
+CRM CSV Files ─────┐
+                   │
+                   ▼
+              BRONZE LAYER
+             Raw Source Data
+                   │
+                   ▼
+              SILVER LAYER
+        Clean + Standardize + Validate
+                   │
+                   ▼
+               GOLD LAYER
+          Dimensions + Fact Table
+                   │
+                   ▼
+              GOLD VIEWS
+                   │
+                   ▼
+        Analytics / Reporting
